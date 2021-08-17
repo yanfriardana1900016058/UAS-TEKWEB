@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "mycashier-54ac5": {
+      "hosting": {
+        "mycashier": [
+          "mycashier-54ac5"
+        ]
+      }
+    }
+  }
+}

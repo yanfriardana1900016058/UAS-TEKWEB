@@ -1,0 +1,54 @@
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  color: #000 !important;
+  height: 100%;
+}
+
+.bg-red {
+  background-color: #fe3155;
+}
+
+.border-bottom {
+  border-bottom: 2px solid black !important;
+}
+
+.border-top {
+  border-top: 2px solid black !important;
+}
+
+.link-black {
+  color: #000 !important;
+}
+
+.fw-bold {
+  font-weight: bold !important;
+}
+
+.btn {
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.active {
+  font-weight: bold;
+}
+
+.card-cart {
+  max-height: 350px;
+  overflow: auto;
+  p {
+    margin: 0 !important;
+  }
+}
+
+.card-product {
+  transition: transform 0.3s cubic-bezier(0.34, 2, 0.6, 1), box-shadow 0.2s ease;
+  &:hover {
+    cursor: pointer !important;
+    transform: scale(1.02);
+  }
+}

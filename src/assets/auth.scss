@@ -1,0 +1,150 @@
+::placeholder {
+  color: transparent !important;
+}
+
+@media (min-width: 992px) {
+  .g-lg-5,
+  .gx-lg-5 {
+    --bs-gutter-x: 3rem;
+  }
+  .g-lg-5,
+  .gy-lg-5 {
+    --bs-gutter-y: 3rem;
+  }
+  .text-lg-start {
+    text-align: left !important;
+  }
+}
+
+.text-white {
+  color: white !important;
+}
+
+.lh-1 {
+  line-height: 1 !important;
+}
+
+.fs-4 {
+  font-size: calc(1.275rem + 0.3vw) !important;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.display-4 {
+  font-size: calc(1.475rem + 2.7vw);
+}
+
+.rounded-3 {
+  border-radius: 1rem !important;
+}
+
+.border-black {
+  border: 2px solid #000000 !important;
+}
+
+.bg-black {
+  background-color: #000000 !important;
+}
+
+.form-floating {
+  position: relative;
+
+  .form-control {
+    padding: 1rem 0.75rem;
+
+    &:focus,
+    &:not(:placeholder-shown) {
+      padding-top: 1.625rem;
+      padding-bottom: 0.625rem;
+    }
+
+    &:focus ~ label,
+    &:not(:placeholder-shown) ~ label,
+    .form-select ~ label {
+      opacity: 0.65;
+      transform: scale(0.85) translateY(-0.5rem) translateX(0.15rem);
+    }
+    &:focus {
+      box-shadow: 0 0 0 0.2rem rgb(0 0 0 / 25%) !important;
+      border-color: black !important;
+    }
+  }
+
+  .form-control,
+  .form-floating > .form-select {
+    height: calc(3.5rem + 2px);
+    line-height: 1.25;
+  }
+
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 1rem 0.75rem;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+  }
+}
+
+.center-page {
+  min-height: 100vh;
+  justify-content: center;
+  position: relative;
+  display: flex;
+}
+
+.auth-alert {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  z-index: 3;
+}
+
+.loading {
+  opacity: 0.2;
+}
+
+.btn-link {
+  color: white;
+
+  &:hover {
+    color: #000000;
+  }
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+
+  &:hover {
+    color: #fff;
+    background-color: #5a5a5a;
+    border-color: #5a5a5a;
+  }
+
+  &:focus {
+    color: #fff;
+    background-color: #5a5a5a;
+    border-color: #000000;
+    box-shadow: 0 0 0 0.2rem rgb(0 0 0 / 50%);
+  }
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.py-5 {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
